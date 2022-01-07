@@ -1,0 +1,30 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Meu primeiro programa ...</title>
+      <style>
+          body {
+             background-color: rgb(23, 139, 139);
+             color: white;
+             font: normal 20pt Arial;
+          }
+          h1 {
+              color: yellow;
+          }
+      </style>
+  </head>
+  <body>
+     <h1> Olá, mundo! </h1>
+     <p>Já me livrei da maldição</p>
+     <script>
+         var n1 = Number(window.prompt('Digite um número: ')) //comando prompt recebe o que foi digitado como string
+         var n2 = Number(window.prompt('Digite outro número: ')) 
+         //comando Number faz conversão tanto para Int como para Float de forma automática
+         var soma = n1 + n2
+         window.alert(`A soma entre n1 e n2 é ${soma}`)
+     </script>
+  </body>
+  </html>

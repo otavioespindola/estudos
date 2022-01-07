@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrangeiro ou não?</title>
+</head>
+<body>
+    <h1>Estrangeiro ou não?</h1>
+    <p>Você nasceu em qual país? <input type="text" name="nasc" id="nasc"></p>
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resp" ></div>
+    <script>
+        function verificar(){
+            var txtnasc = document.querySelector('input#nasc')
+            var res = document.querySelector('div#resp')
+            var pais = txtnasc.value.toUpperCase()
+            res.innerHTML = `<p>País de nascimento: <strong>${pais}</strong>  </p>`
+            if (pais == 'BRASIL') {
+                res.innerHTML += '<p><strong>Brasileiro(a)</strong></p>'
+            } else {
+                res.innerHTML += '<p>Você é <strong>Estrangeiro(a)</strong></p>'
+            }
+        }        
+    </script>
+    
+</body>
+</html>
